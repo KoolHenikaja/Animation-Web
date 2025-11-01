@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger Express – Fast Food</title>
+  <link rel="stylesheet" href="../css-file/index.css" />
+  <link rel="stylesheet" href="../css-file/responsive.css" />
+  <link rel="icon" href="../assets/images/logo.png" type="image/png" />
+</head>
+<body>
+  <!-- En-tête -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-icon">🍔</div>
+        <h1>Big Food</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Hero avec Slider -->
+  <section class="hero">
+    <div class="hero-slider">
+      <!-- Slide 1 -->
+      <div class="hero-slide active">
+        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero-bg_2.jpg');"></div>
+        <div class="hero-content">
+          <h2 class="slide-in">Découvrez nos délicieux burgers faits maison !</h2>
+          <p class="slide-in-delay">Fraîcheur, qualité et rapidité au rendez-vous.</p>
+          <a href="menu.html" class="btn slide-in-delay-2">Voir le menu</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/burger-classic.jpg');"></div>
+        <div class="hero-content">
+          <h2 class="slide-in">Le Classique Inégalé</h2>
+          <p class="slide-in-delay">Notre burger signature qui fait fondre les cœurs</p>
+          <a href="menu.html" class="btn slide-in-delay-2">Commander maintenant</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/chicken-burger.jpg');"></div>
+        <div class="hero-content">
+          <h2 class="slide-in">Poulet Croustillant Premium</h2>
+          <p class="slide-in-delay">Saveurs épicées et textures croquantes</p>
+          <a href="menu.html" class="btn slide-in-delay-2">Découvrir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicateurs -->
+    <div class="slider-dots">
+      <span class="dot active" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+  </section>
+
+  <!-- Section Produits Complets -->
+  <section class="products">
+    <div class="container">
+      <h2>Notre Menu Complet</h2>
+      <p class="section-subtitle">Des saveurs authentiques pour tous les goûts</p>
+
+      <!-- Burgers -->
+      <div class="product-category">
+        <h3>🍔 Burgers</h3>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/burger-classic.jpg" alt="Burger Classique" />
+              <div class="product-badge">Populaire</div>
+            </div>
+            <div class="product-info">
+              <h4>Burger Classique</h4>
+              <p>Steak haché 100% bœuf, salade, tomate, oignon, cornichons, sauce maison</p>
+              <div class="product-footer">
+                <span class="price">8.90€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/chicken-burger.jpg" alt="Burger Poulet" />
+              <div class="product-badge new">Nouveau</div>
+            </div>
+            <div class="product-info">
+              <h4>Burger Poulet Croustillant</h4>
+              <p>Poulet pané croustillant, mayo épicée, laitue iceberg, tomate fraîche</p>
+              <div class="product-footer">
+                <span class="price">9.50€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/burger-classic.jpg" alt="Burger Bacon" />
+            </div>
+            <div class="product-info">
+              <h4>Bacon Deluxe</h4>
+              <p>Double steak, bacon grillé, cheddar fondu, oignons caramélisés, BBQ</p>
+              <div class="product-footer">
+                <span class="price">11.90€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/chicken-burger.jpg" alt="Veggie Burger" />
+            </div>
+            <div class="product-info">
+              <h4>Veggie Burger</h4>
+              <p>Steak végétal, avocat, tomates séchées, roquette, sauce curry</p>
+              <div class="product-footer">
+                <span class="price">9.90€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accompagnements -->
+      <div class="product-category">
+        <h3>🍟 Accompagnements</h3>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/fries.jpg" alt="Frites Maison" />
+            </div>
+            <div class="product-info">
+              <h4>Frites Maison</h4>
+              <p>Coupées à la main, cuites à l'huile de tournesol, sel de Guérande</p>
+              <div class="product-footer">
+                <span class="price">3.50€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/fries.jpg" alt="Frites Patate Douce" />
+              <div class="product-badge new">Nouveau</div>
+            </div>
+            <div class="product-info">
+              <h4>Frites Patate Douce</h4>
+              <p>Frites de patate douce croustillantes, sauce miel-moutarde</p>
+              <div class="product-footer">
+                <span class="price">4.50€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/fries.jpg" alt="Onion Rings" />
+            </div>
+            <div class="product-info">
+              <h4>Onion Rings</h4>
+              <p>Rondelles d'oignons panées, croustillantes à souhait</p>
+              <div class="product-footer">
+                <span class="price">4.00€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/fries.jpg" alt="Nuggets" />
+            </div>
+            <div class="product-info">
+              <h4>Nuggets de Poulet (6 pcs)</h4>
+              <p>Poulet 100% filet, panure croustillante, sauce au choix</p>
+              <div class="product-footer">
+                <span class="price">5.50€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boissons -->
+      <div class="product-category">
+        <h3>🥤 Boissons</h3>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/fries.jpg" alt="Coca Cola" />
+            </div>
+            <div class="product-info">
+              <h4>Coca-Cola</h4>
+              <p>33cl / 50cl</p>
+              <div class="product-footer">
+                <span class="price">2.50€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/fries.jpg" alt="Milkshake" />
+            </div>
+            <div class="product-info">
+              <h4>Milkshake</h4>
+              <p>Vanille, Chocolat, Fraise ou Caramel</p>
+              <div class="product-footer">
+                <span class="price">4.90€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/fries.jpg" alt="Jus de fruits" />
+            </div>
+            <div class="product-info">
+              <h4>Jus de Fruits Frais</h4>
+              <p>Orange, Pomme ou Tropical</p>
+              <div class="product-footer">
+                <span class="price">3.50€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/fries.jpg" alt="Eau" />
+            </div>
+            <div class="product-info">
+              <h4>Eau Minérale</h4>
+              <p>Plate ou Gazeuse - 50cl</p>
+              <div class="product-footer">
+                <span class="price">2.00€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="product-category">
+        <h3>🍰 Desserts</h3>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/fries.jpg" alt="Brownie" />
+            </div>
+            <div class="product-info">
+              <h4>Brownie Chocolat</h4>
+              <p>Brownie maison au chocolat belge, noix de pécan</p>
+              <div class="product-footer">
+                <span class="price">4.50€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/fries.jpg" alt="Cheesecake" />
+            </div>
+            <div class="product-info">
+              <h4>Cheesecake</h4>
+              <p>Cheesecake new-yorkais, coulis fruits rouges</p>
+              <div class="product-footer">
+                <span class="price">5.00€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/fries.jpg" alt="Sundae" />
+            </div>
+            <div class="product-info">
+              <h4>Sundae Glacé</h4>
+              <p>Glace vanille, sauce chocolat, chantilly, vermicelles</p>
+              <div class="product-footer">
+                <span class="price">4.00€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/fries.jpg" alt="Cookies" />
+            </div>
+            <div class="product-info">
+              <h4>Cookies (3 pcs)</h4>
+              <p>Cookies aux pépites de chocolat, cuits du jour</p>
+              <div class="product-footer">
+                <span class="price">3.50€</span>
+                <button class="btn-small">Commander</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Appel à l'action -->
+  <section class="cta">
+    <div class="container">
+      <h2>Prêt à commander ?</h2>
+      <p>Réservez en ligne ou passez directement à notre drive !</p>
+      <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Big Food. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    let currentSlideIndex = 0;
+    let autoSlideInterval;
+
+    function showSlide(n) {
+      const slides = document.querySelectorAll('.hero-slide');
+      const dots = document.querySelectorAll('.dot');
+      
+      if (n >= slides.length) currentSlideIndex = 0;
+      if (n < 0) currentSlideIndex = slides.length - 1;
+      
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      slides[currentSlideIndex].classList.add('active');
+      dots[currentSlideIndex].classList.add('active');
+    }
+
+    function changeSlide(n) {
+      clearInterval(autoSlideInterval);
+      currentSlideIndex += n;
+      showSlide(currentSlideIndex);
+      startAutoSlide();
+    }
+
+    function currentSlide(n) {
+      clearInterval(autoSlideInterval);
+      currentSlideIndex = n;
+      showSlide(currentSlideIndex);
+      startAutoSlide();
+    }
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(() => {
+        currentSlideIndex++;
+        showSlide(currentSlideIndex);
+      }, 5000);
+    }
+
+    // Animation au scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      startAutoSlide();
+      
+      document.querySelectorAll('.product-card, .product-category h3').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>
