@@ -6,14 +6,14 @@
   <title>Burger Express – Fast Food</title>
   <link rel="stylesheet" href="../css-file/index.css" />
   <link rel="stylesheet" href="../css-file/responsive.css" />
-  <link rel="icon" href="../assets/images/logo.png" type="image/png" />
+  <link rel="icon" href="../assets/images/logo.webp" type="image/png" />
 </head>
 <body>
   <!-- En-tête -->
   <header class="header">
     <div class="container">
       <div class="logo">
-        <div class="logo-icon">🍔</div>
+        <img src="../assets/images/logo.webp" alt="Big Food logo" class="logo-image" loading="lazy" />
         <h1>Big Food</h1>
       </div>
       <nav class="nav">
@@ -32,7 +32,7 @@
     <div class="hero-slider">
       <!-- Slide 1 -->
       <div class="hero-slide active">
-        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero-bg_2.jpg');"></div>
+        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero_1.webp');" loading="lazy"></div>
         <div class="hero-content">
           <h2 class="slide-in">Découvrez nos délicieux burgers faits maison !</h2>
           <p class="slide-in-delay">Fraîcheur, qualité et rapidité au rendez-vous.</p>
@@ -42,17 +42,17 @@
 
       <!-- Slide 2 -->
       <div class="hero-slide">
-        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/burger-classic.jpg');"></div>
+        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/burger-classic.webp');" loading="lazy"></div>
         <div class="hero-content">
           <h2 class="slide-in">Le Classique Inégalé</h2>
           <p class="slide-in-delay">Notre burger signature qui fait fondre les cœurs</p>
-          <a href="menu.html" class="btn slide-in-delay-2">Commander maintenant</a>
+          <a href="menu.html" class="btn slide-in-delay-2">Plus de details</a>
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="hero-slide">
-        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/chicken-burger.jpg');"></div>
+        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/chicken-burger.webp');" loading="lazy"></div>
         <div class="hero-content">
           <h2 class="slide-in">Poulet Croustillant Premium</h2>
           <p class="slide-in-delay">Saveurs épicées et textures croquantes</p>
@@ -81,7 +81,7 @@
         <div class="product-grid">
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/burger-classic.jpg" alt="Burger Classique" />
+              <img src="../assets/images/burger-classic.webp" alt="Burger Classique" loading="lazy" />
               <div class="product-badge">Populaire</div>
             </div>
             <div class="product-info">
@@ -96,7 +96,7 @@
 
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/chicken-burger.jpg" alt="Burger Poulet" />
+              <img src="../assets/images/chicken-burger.webp" alt="Burger Poulet" loading="lazy" />
               <div class="product-badge new">Nouveau</div>
             </div>
             <div class="product-info">
@@ -111,7 +111,7 @@
 
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/burger-classic.jpg" alt="Burger Bacon" />
+              <img src="../assets/images/bacon.webp" alt="Burger Bacon" loading="lazy" />
             </div>
             <div class="product-info">
               <h4>Bacon Deluxe</h4>
@@ -125,7 +125,7 @@
 
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/chicken-burger.jpg" alt="Veggie Burger" />
+              <img src="../assets/images/veggie_burger.webp" alt="Veggie Burger" loading="lazy" />
             </div>
             <div class="product-info">
               <h4>Veggie Burger</h4>
@@ -145,7 +145,7 @@
         <div class="product-grid">
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/fries.jpg" alt="Frites Maison" />
+              <img src="../assets/images/frite_maison.webp" alt="Frites Maison" loading="lazy" />
             </div>
             <div class="product-info">
               <h4>Frites Maison</h4>
@@ -159,7 +159,7 @@
 
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/fries.jpg" alt="Frites Patate Douce" />
+              <img src="../assets/images/frite_patate_douce.webp" alt="Frites Patate Douce" loading="lazy" />
               <div class="product-badge new">Nouveau</div>
             </div>
             <div class="product-info">
@@ -174,7 +174,7 @@
 
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/fries.jpg" alt="Onion Rings" />
+              <img src="../assets/images/ognion_rings.webp" alt="Onion Rings" loading="lazy" />
             </div>
             <div class="product-info">
               <h4>Onion Rings</h4>
@@ -188,7 +188,8 @@
 
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/fries.jpg" alt="Nuggets" />
+              <img src="../assets/images/nuggets.webp" alt="Nuggets" loading="lazy" />
+              <div class="product-badge">Populaire</div>
             </div>
             <div class="product-info">
               <h4>Nuggets de Poulet (6 pcs)</h4>
@@ -208,7 +209,7 @@
         <div class="product-grid">
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/fries.jpg" alt="Coca Cola" />
+              <img src="../assets/boissons/coca.webp" alt="Coca Cola" loading="lazy" />
             </div>
             <div class="product-info">
               <h4>Coca-Cola</h4>
@@ -222,7 +223,7 @@
 
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/fries.jpg" alt="Milkshake" />
+              <img src="../assets/boissons/milkshake.webp" alt="Milkshake" loading="lazy" />
             </div>
             <div class="product-info">
               <h4>Milkshake</h4>
@@ -236,7 +237,7 @@
 
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/fries.jpg" alt="Jus de fruits" />
+              <img src="../assets/boissons/jus_de_fruits.webp" alt="Jus de fruits" loading="lazy" />
             </div>
             <div class="product-info">
               <h4>Jus de Fruits Frais</h4>
@@ -250,7 +251,7 @@
 
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/fries.jpg" alt="Eau" />
+              <img src="../assets/boissons/eau_minerale.webp" alt="Eau" loading="lazy" />
             </div>
             <div class="product-info">
               <h4>Eau Minérale</h4>
@@ -270,7 +271,7 @@
         <div class="product-grid">
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/fries.jpg" alt="Brownie" />
+              <img src="../assets/desserts/browny_chocolat.webp" alt="Brownie" loading="lazy" />
             </div>
             <div class="product-info">
               <h4>Brownie Chocolat</h4>
@@ -284,7 +285,7 @@
 
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/fries.jpg" alt="Cheesecake" />
+              <img src="../assets/desserts/cheesecake.webp" alt="Cheesecake" loading="lazy" />
             </div>
             <div class="product-info">
               <h4>Cheesecake</h4>
@@ -298,7 +299,7 @@
 
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/fries.jpg" alt="Sundae" />
+              <img src="../assets/desserts/glace.webp" alt="Sundae" loading="lazy" />
             </div>
             <div class="product-info">
               <h4>Sundae Glacé</h4>
@@ -312,7 +313,7 @@
 
           <div class="product-card">
             <div class="product-image">
-              <img src="../assets/images/fries.jpg" alt="Cookies" />
+              <img src="../assets/desserts/cookies.webp" alt="Cookies" loading="lazy" />
             </div>
             <div class="product-info">
               <h4>Cookies (3 pcs)</h4>
