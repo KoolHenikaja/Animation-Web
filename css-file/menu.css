@@ -83,6 +83,7 @@
 /* Section Menu */
 .menu-section {
   padding: 4rem 0;
+  position: relative;
   background: linear-gradient(to bottom, #f8f9fa 0%, #fff 50%, #f8f9fa 100%);
 }
 
