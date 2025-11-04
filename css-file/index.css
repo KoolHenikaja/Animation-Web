@@ -293,10 +293,54 @@ body {
   color: #e63946;
 }
 
+/* Bouton voir details */
 .btn-small {
-  padding: 8px 20px;
-  font-size: 0.9rem;
-  border-radius: 25px;
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 65, 108, 0.3);
+  text-transform: capitalize;
+}
+
+.btn-small:hover {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(255, 65, 108, 0.45);
+}
+
+.btn-small:active {
+  transform: scale(0.97);
+  box-shadow: 0 3px 8px rgba(255, 65, 108, 0.3);
+}
+
+.btn .slide-in-delay-2 {
+   display: inline-block;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 65, 108, 0.3);
+  text-transform: capitalize;
+}
+
+.btn .slide-in-delay-2:hover {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(255, 65, 108, 0.45);
 }
 
 /* Section Produits */
