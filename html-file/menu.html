@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Big Food</title>
+  <link rel="stylesheet" href="../css-file/index.css" />
+  <link rel="stylesheet" href="../css-file/menu.css" />
+  <link rel="stylesheet" href="../css-file/responsive.css" />
+  <link rel="icon" href="../assets/images/logo.webp" type="image/png" />
+</head>
+<body>
+  <!-- En-tête -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="../assets/images/logo.webp" alt="Big Food logo" class="logo-image" loading="lazy" />
+        <h1>Big Food</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Menu -->
+  <section class="menu-hero">
+    <div class="menu-hero-content">
+      <h1>Notre Menu</h1>
+      <p>Des saveurs authentiques qui raviront vos papilles</p>
+    </div>
+  </section>
+
+  <!-- Filtres Menu -->
+  <section class="menu-section">
+    <div class="container">
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="burgers">🍔 Burgers</button>
+        <button class="filter-btn" data-filter="accompagnements">🍟 Accompagnements</button>
+        <button class="filter-btn" data-filter="boissons">🥤 Boissons</button>
+        <button class="filter-btn" data-filter="desserts">🍰 Desserts</button>
+      </div>
+
+      <!-- Burgers -->
+      <div class="product-category" data-category="burgers">
+        <h2 class="category-title">🍔 Nos Burgers</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/burger-classic.webp" alt="Burger Classique" loading="lazy" />
+              <div class="product-badge">Populaire</div>
+            </div>
+            <div class="product-info">
+              <h3>Burger Classique</h3>
+              <p>Steak haché 100% bœuf, salade croquante, tomate fraîche, oignon, cornichons et notre sauce maison secrète</p>
+              <div class="product-details">
+                <span class="calories">🔥 450 kcal</span>
+                <span class="prep-time">⏱️ 10 min</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 15.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/chicken-burger.webp" alt="Burger Poulet" loading="lazy" />
+              <div class="product-badge new">Nouveau</div>
+            </div>
+            <div class="product-info">
+              <h3>Burger Poulet Croustillant</h3>
+              <p>Poulet pané croustillant, mayo épicée, laitue iceberg fraîche, tomate juteuse</p>
+              <div class="product-details">
+                <span class="calories">🔥 520 kcal</span>
+                <span class="prep-time">⏱️ 12 min</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 25.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/bacon.webp" alt="Burger Bacon" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3>Bacon Deluxe</h3>
+              <p>Double steak grillé, bacon croustillant, cheddar fondu, oignons caramélisés, sauce BBQ maison</p>
+              <div class="product-details">
+                <span class="calories">🔥 680 kcal</span>
+                <span class="prep-time">⏱️ 15 min</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 12.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/veggie_burger.webp" alt="Veggie Burger" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3>Veggie Burger</h3>
+              <p>Steak végétal aux légumes, avocat frais, tomates séchées, roquette, sauce curry douce</p>
+              <div class="product-details">
+                <span class="calories">🔥 380 kcal</span>
+                <span class="prep-time">⏱️ 10 min</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 10.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accompagnements -->
+      <div class="product-category" data-category="accompagnements">
+        <h2 class="category-title">🍟 Accompagnements</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/frite_maison.webp" alt="Frites Maison" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3>Frites Maison</h3>
+              <p>Coupées à la main, cuites à l'huile de tournesol, assaisonnées au sel de Guérande</p>
+              <div class="product-details">
+                <span class="calories">🔥 320 kcal</span>
+                <span class="prep-time">⏱️ 8 min</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 8.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/frite_patate_douce.webp" alt="Frites Patate Douce" loading="lazy" />
+              <div class="product-badge new">Nouveau</div>
+            </div>
+            <div class="product-info">
+              <h3>Frites Patate Douce</h3>
+              <p>Frites de patate douce croustillantes, servies avec sauce miel-moutarde</p>
+              <div class="product-details">
+                <span class="calories">🔥 280 kcal</span>
+                <span class="prep-time">⏱️ 10 min</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 9.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/ognion_rings.webp" alt="Onion Rings" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3>Onion Rings</h3>
+              <p>Rondelles d'oignons panées maison, croustillantes à souhait</p>
+              <div class="product-details">
+                <span class="calories">🔥 290 kcal</span>
+                <span class="prep-time">⏱️ 7 min</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 8.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/nuggets.webp" alt="Nuggets" loading="lazy" />
+              <div class="product-badge">Populaire</div>
+            </div>
+            <div class="product-info">
+              <h3>Nuggets de Poulet (6 pcs)</h3>
+              <p>Poulet 100% filet, panure croustillante, sauce au choix incluse</p>
+              <div class="product-details">
+                <span class="calories">🔥 410 kcal</span>
+                <span class="prep-time">⏱️ 9 min</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 30.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boissons -->
+      <div class="product-category" data-category="boissons">
+        <h2 class="category-title">🥤 Boissons Rafraîchissantes</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/boissons/coca.webp" alt="Coca Cola" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3>Coca-Cola</h3>
+              <p>La boisson gazeuse classique - Disponible en 33cl ou 50cl</p>
+              <div class="product-details">
+                <span class="calories">🔥 140 kcal</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 6.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/boissons/milkshake.webp" alt="Milkshake" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3>Milkshake</h3>
+              <p>Crémeux et onctueux - Vanille, Chocolat, Fraise ou Caramel</p>
+              <div class="product-details">
+                <span class="calories">🔥 380 kcal</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 10.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/boissons/jus_de_fruits.webp" alt="Jus de fruits" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3>Jus de Fruits Frais</h3>
+              <p>100% naturel - Orange pressée, Pomme ou Tropical</p>
+              <div class="product-details">
+                <span class="calories">🔥 120 kcal</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 8.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/boissons/eau_minerale.webp" alt="Eau" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3>Eau Minérale</h3>
+              <p>Pure et désaltérante - Plate ou Gazeuse - 50cl</p>
+              <div class="product-details">
+                <span class="calories">🔥 0 kcal</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 5.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="product-category" data-category="desserts">
+        <h2 class="category-title">🍰 Desserts Gourmands</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/desserts/browny_chocolat.webp" alt="Brownie" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3>Brownie Chocolat</h3>
+              <p>Brownie maison au chocolat belge, avec noix de pécan croquantes</p>
+              <div class="product-details">
+                <span class="calories">🔥 420 kcal</span>
+                <span class="prep-time">⏱️ 5 min</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 12.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/desserts/cheesecake.webp" alt="Cheesecake" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3>Cheesecake</h3>
+              <p>Cheesecake new-yorkais authentique, nappage coulis de fruits rouges</p>
+              <div class="product-details">
+                <span class="calories">🔥 480 kcal</span>
+                <span class="prep-time">⏱️ 5 min</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 15.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/desserts/glace.webp" alt="Sundae" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3>Sundae Glacé</h3>
+              <p>Glace vanille onctueuse, sauce chocolat, chantilly maison et vermicelles colorés</p>
+              <div class="product-details">
+                <span class="calories">🔥 350 kcal</span>
+                <span class="prep-time">⏱️ 3 min</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 10.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/desserts/cookies.webp" alt="Cookies" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3>Cookies (3 pcs)</h3>
+              <p>Cookies maison aux pépites de chocolat, cuits du jour et encore tièdes</p>
+              <div class="product-details">
+                <span class="calories">🔥 320 kcal</span>
+                <span class="prep-time">⏱️ 2 min</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">Ar 9.000</span>
+                <button class="btn-small btn-order">Commander</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Formules -->
+  <section class="formules-section">
+    <div class="container">
+      <h2 class="section-title">Nos Formules Avantageuses</h2>
+      <p class="section-subtitle">Économisez avec nos menus combinés</p>
+      
+      <div class="formules-grid">
+        <div class="formule-card">
+          <div class="formule-badge">-15%</div>
+          <h3>Formule Solo</h3>
+          <ul class="formule-list">
+            <li>✓ 1 Burger au choix</li>
+            <li>✓ 1 Portion de frites</li>
+            <li>✓ 1 Boisson 33cl</li>
+          </ul>
+          <div class="formule-price">
+            <span class="old-price">Ar 29.000</span>
+            <span class="new-price">Ar 24.650</span>
+          </div>
+          <button class="btn">Commander</button>
+        </div>
+
+        <div class="formule-card featured">
+          <div class="formule-badge popular">Le + Populaire</div>
+          <h3>Formule Duo</h3>
+          <ul class="formule-list">
+            <li>✓ 2 Burgers au choix</li>
+            <li>✓ 2 Portions de frites</li>
+            <li>✓ 2 Boissons 50cl</li>
+            <li>✓ 1 Dessert à partager</li>
+          </ul>
+          <div class="formule-price">
+            <span class="old-price">Ar 62.000</span>
+            <span class="new-price">Ar 49.600</span>
+          </div>
+          <button class="btn">Commander</button>
+        </div>
+
+        <div class="formule-card">
+          <div class="formule-badge">-20%</div>
+          <h3>Formule Famille</h3>
+          <ul class="formule-list">
+            <li>✓ 4 Burgers au choix</li>
+            <li>✓ 4 Portions de frites</li>
+            <li>✓ 4 Boissons au choix</li>
+            <li>✓ 2 Desserts</li>
+          </ul>
+          <div class="formule-price">
+            <span class="old-price">Ar 120.000</span>
+            <span class="new-price">Ar 96.000</span>
+          </div>
+          <button class="btn">Commander</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Appel à l'action -->
+  <section class="cta">
+    <div class="container">
+      <h2>Envie de commander ?</h2>
+      <p>Contactez-nous dès maintenant pour passer votre commande !</p>
+      <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Big Food. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../javascript-file/menu.js"></script>
+</body>
+</html>
