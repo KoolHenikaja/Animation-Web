@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger Express – Fast Food</title>
+  <link rel="stylesheet" href="../css-file/index.css" />
+  <link rel="stylesheet" href="../css-file/responsive.css" />
+  <link rel="icon" href="../assets/images/logo.webp" type="image/png" />
+</head>
+<body>
+  <!-- En-tête -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="../assets/images/logo.webp" alt="Big Food logo" class="logo-image" loading="lazy" />
+        <h1>Big Food</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Hero avec Slider -->
+  <section class="hero">
+    <div class="hero-slider">
+      <!-- Slide 1 -->
+      <div class="hero-slide active">
+        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero_1.webp');" loading="lazy"></div>
+        <div class="hero-content">
+          <h2 class="slide-in">Découvrez nos délicieux burgers faits maison !</h2>
+          <p class="slide-in-delay">Fraîcheur, qualité et rapidité au rendez-vous.</p>
+          <a href="menu.html" class="btn slide-in-delay-2">Voir le menu</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/burger-classic.webp');" loading="lazy"></div>
+        <div class="hero-content">
+          <h2 class="slide-in">Le Classique Inégalé</h2>
+          <p class="slide-in-delay">Notre burger signature qui fait fondre les cœurs</p>
+          <a href="menu.html" class="btn slide-in-delay-2">Plus de details</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/chicken-burger.webp');" loading="lazy"></div>
+        <div class="hero-content">
+          <h2 class="slide-in">Poulet Croustillant Premium</h2>
+          <p class="slide-in-delay">Saveurs épicées et textures croquantes</p>
+          <a href="menu.html" class="btn slide-in-delay-2">Découvrir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicateurs -->
+    <div class="slider-dots">
+      <span class="dot active" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+  </section>
+
+  <!-- Section Produits Complets -->
+  <section class="products">
+    <div class="container">
+      <h2>Notre Menu Complet</h2>
+      <p class="section-subtitle">Des saveurs authentiques pour tous les goûts</p>
+
+      <!-- Burgers -->
+      <div class="product-category">
+        <h3>🍔 Burgers</h3>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/burger-classic.webp" alt="Burger Classique" loading="lazy" />
+              <div class="product-badge">Populaire</div>
+            </div>
+            <div class="product-info">
+              <h4>Burger Classique</h4>
+              <p>Steak haché 100% bœuf, salade, tomate, oignon, cornichons, sauce maison</p>
+              <div class="product-footer">
+                <span class="price">Ar 15.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/chicken-burger.webp" alt="Burger Poulet" loading="lazy" />
+              <div class="product-badge new">Nouveau</div>
+            </div>
+            <div class="product-info">
+              <h4>Burger Poulet Croustillant</h4>
+              <p>Poulet pané croustillant, mayo épicée, laitue iceberg, tomate fraîche</p>
+              <div class="product-footer">
+                <span class="price">Ar 25.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/bacon.webp" alt="Burger Bacon" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Bacon Deluxe</h4>
+              <p>Double steak, bacon grillé, cheddar fondu, oignons caramélisés, BBQ</p>
+              <div class="product-footer">
+                <span class="price">Ar 12.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/veggie_burger.webp" alt="Veggie Burger" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Veggie Burger</h4>
+              <p>Steak végétal, avocat, tomates séchées, roquette, sauce curry</p>
+              <div class="product-footer">
+                <span class="price">Ar 10.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accompagnements -->
+      <div class="product-category">
+        <h3>🍟 Accompagnements</h3>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/frite_maison.webp" alt="Frites Maison" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Frites Maison</h4>
+              <p>Coupées à la main, cuites à l'huile de tournesol, sel de Guérande</p>
+              <div class="product-footer">
+                <span class="price">Ar 8.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/frite_patate_douce.webp" alt="Frites Patate Douce" loading="lazy" />
+              <div class="product-badge new">Nouveau</div>
+            </div>
+            <div class="product-info">
+              <h4>Frites Patate Douce</h4>
+              <p>Frites de patate douce croustillantes, sauce miel-moutarde</p>
+              <div class="product-footer">
+                <span class="price">Ar 9.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/ognion_rings.webp" alt="Onion Rings" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Onion Rings</h4>
+              <p>Rondelles d'oignons panées, croustillantes à souhait</p>
+              <div class="product-footer">
+                <span class="price">Ar 8.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/images/nuggets.webp" alt="Nuggets" loading="lazy" />
+              <div class="product-badge">Populaire</div>
+            </div>
+            <div class="product-info">
+              <h4>Nuggets de Poulet (6 pcs)</h4>
+              <p>Poulet 100% filet, panure croustillante, sauce au choix</p>
+              <div class="product-footer">
+                <span class="price">Ar 30.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boissons -->
+      <div class="product-category">
+        <h3>🥤 Boissons</h3>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/boissons/coca.webp" alt="Coca Cola" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Coca-Cola</h4>
+              <p>33cl / 50cl</p>
+              <div class="product-footer">
+                <span class="price">Ar 6.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/boissons/milkshake.webp" alt="Milkshake" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Milkshake</h4>
+              <p>Vanille, Chocolat, Fraise ou Caramel</p>
+              <div class="product-footer">
+                <span class="price">Ar 10.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/boissons/jus_de_fruits.webp" alt="Jus de fruits" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Jus de Fruits Frais</h4>
+              <p>Orange, Pomme ou Tropical</p>
+              <div class="product-footer">
+                <span class="price">Ar 8.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/boissons/eau_minerale.webp" alt="Eau" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Eau Minérale</h4>
+              <p>Plate ou Gazeuse - 50cl</p>
+              <div class="product-footer">
+                <span class="price">Ar 5.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="product-category">
+        <h3>🍰 Desserts</h3>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/desserts/browny_chocolat.webp" alt="Brownie" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Brownie Chocolat</h4>
+              <p>Brownie maison au chocolat belge, noix de pécan</p>
+              <div class="product-footer">
+                <span class="price">Ar 12.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/desserts/cheesecake.webp" alt="Cheesecake" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Cheesecake</h4>
+              <p>Cheesecake new-yorkais, coulis fruits rouges</p>
+              <div class="product-footer">
+                <span class="price">Ar 15.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/desserts/glace.webp" alt="Sundae" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Sundae Glacé</h4>
+              <p>Glace vanille, sauce chocolat, chantilly, vermicelles</p>
+              <div class="product-footer">
+                <span class="price">Ar 10.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/desserts/cookies.webp" alt="Cookies" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Cookies (3 pcs)</h4>
+              <p>Cookies aux pépites de chocolat, cuits du jour</p>
+              <div class="product-footer">
+                <span class="price">Ar 9.000</span>
+                <button class="btn-small">Voir details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Appel à l'action -->
+  <section class="cta">
+    <div class="container">
+      <h2>Prêt à commander ?</h2>
+      <p>Réservez en ligne ou passez directement à notre drive !</p>
+      <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Big Food. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+ <script src="../javascript-file/main.js"></script>
+</body>
+</html>
