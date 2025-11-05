@@ -7,7 +7,7 @@
   height: 50vh;
   min-height: 400px;
   margin-top: 70px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/hero_1.webp');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/history.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
