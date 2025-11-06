@@ -10,11 +10,12 @@
   height: 21px;
   cursor: pointer;
   z-index: 1100;
+  margin-right: 1rem;
 }
 
 .burger span {
   display: block;
-  height: 3px;
+  height: 4px;
   width: 100%;
   background: #e63946;
   border-radius: 3px;
