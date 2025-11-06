@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Big Food</title>
+  <link rel="stylesheet" href="../css-file/index.css" />
+  <link rel="stylesheet" href="../css-file/contact.css" />
+  <link rel="stylesheet" href="../css-file/responsive.css" />
+  <link rel="icon" href="../assets/images/logo.webp" type="image/png" />
+</head>
+<body>
+  <!-- En-tête -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="../assets/images/logo.webp" alt="Big Food logo" class="logo-image" loading="lazy" />
+        <h1>Big Food</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Contact -->
+  <section class="contact-hero">
+    <div class="contact-hero-content">
+      <h1>Contactez-nous</h1>
+      <p>Nous sommes à votre écoute pour toute question ou commande</p>
+    </div>
+  </section>
+
+  <!-- Section Contact Principal -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Formulaire de Contact -->
+        <div class="contact-form-wrapper">
+          <h2>Envoyez-nous un message</h2>
+          <p class="form-subtitle">Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais</p>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">Prénom *</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="Votre prénom" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Nom *</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Votre nom" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Téléphone *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+261 XX XX XXX XX" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Sujet *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Sélectionnez un sujet</option>
+                <option value="commande">Passer une commande</option>
+                <option value="reservation">Réservation</option>
+                <option value="renseignement">Demande de renseignement</option>
+                <option value="reclamation">Réclamation</option>
+                <option value="partenariat">Partenariat</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit">
+              <span>Envoyer le message</span>
+              <span class="btn-icon">→</span>
+            </button>
+          </form>
+
+          <div class="form-success" id="successMessage">
+            <div class="success-icon">✓</div>
+            <h3>Message envoyé avec succès !</h3>
+            <p>Nous vous répondrons dans les plus brefs délais.</p>
+          </div>
+        </div>
+
+        <!-- Informations de Contact -->
+        <div class="contact-info-wrapper">
+          <h2>Nos Coordonnées</h2>
+          <p class="info-subtitle">N'hésitez pas à nous contacter par téléphone ou à venir nous rendre visite</p>
+
+          <div class="contact-cards">
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <div class="info-content">
+                <h3>Adresse</h3>
+                <p>Lot IVA 45 Ambatolahikosoa<br />Fianarantsoa 301, Madagascar</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">📞</div>
+              <div class="info-content">
+                <h3>Téléphone</h3>
+                <p>+261 38 39 120 94<br />+261 33 98 765 43</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">✉️</div>
+              <div class="info-content">
+                <h3>Email</h3>
+                <p>contact@bigfood.mg<br />commande@bigfood.mg</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">🕐</div>
+              <div class="info-content">
+                <h3>Horaires d'ouverture</h3>
+                <p><strong>Lun - Ven:</strong> 10h00 - 22h00<br />
+                   <strong>Sam - Dim:</strong> 11h00 - 23h00</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Réseaux Sociaux -->
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Carte -->
+  <section class="map-section">
+    <div class="container">
+      <h2 class="section-title">Trouvez-nous sur la carte</h2>
+      <p class="section-subtitle">Venez nous rendre visite dans notre restaurant</p>
+      
+      <div class="map-wrapper">
+        <div class="map-placeholder">
+          <div class="map-icon">📍</div>
+          <p>Lot IVA 45 Ambatolahikosoa, Fianarantsoa</p>
+          <a href="https://maps.google.com" target="_blank" class="btn btn-map">Ouvrir dans Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section FAQ Rapide -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title">Questions Fréquentes</h2>
+      <p class="section-subtitle">Trouvez rapidement les réponses à vos questions</p>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h3>🚚 Livraison disponible ?</h3>
+          <p>Oui, nous livrons dans un rayon de 10km autour de Fianarantsoa. Commande minimum : Ar 30.000</p>
+        </div>
+
+        <div class="faq-card">
+          <h3>💳 Moyens de paiement ?</h3>
+          <p>Nous acceptons les espèces, MVola, Orange Money, Airtel Money et cartes bancaires.</p>
+        </div>
+
+        <div class="faq-card">
+          <h3>⏱️ Délai de préparation ?</h3>
+          <p>Vos commandes sont prêtes en 10-15 minutes. Pour les commandes en ligne, comptez 30-45 minutes.</p>
+        </div>
+
+        <div class="faq-card">
+          <h3>🎉 Commandes groupées ?</h3>
+          <p>Nous acceptons les commandes groupées pour événements. Contactez-nous 48h à l'avance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Appel à l'action -->
+  <section class="cta">
+    <div class="container">
+      <h2>Prêt à commander ?</h2>
+      <p>Découvrez notre menu et régalez-vous avec nos délicieux burgers !</p>
+      <a href="menu.html" class="btn btn-outline">Voir le menu</a>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Big Food. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="../javascript-file/contact.js"></script>
+</body>
+</html>
