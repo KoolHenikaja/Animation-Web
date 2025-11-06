@@ -17,7 +17,7 @@
   color: white;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  
 }
 
 .contact-hero::before {
@@ -82,7 +82,8 @@
 
 /* Section Contact */
 .contact-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
+  position: relative;
   background: linear-gradient(to bottom, #f8f9fa 0%, #fff 100%);
 }
 
