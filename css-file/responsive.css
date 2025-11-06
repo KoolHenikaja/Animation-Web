@@ -1,0 +1,67 @@
+/* ==========================
+   MENU BURGER RESPONSIVE
+   ========================== */
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #e63946;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+
+/* Animation du burger en croix */
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* NAVIGATION MOBILE */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  .nav.open {
+    max-height: 400px; /* hauteur auto simulée */
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
+  }
+}

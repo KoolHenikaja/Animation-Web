@@ -98,7 +98,7 @@
 .contact-form-wrapper {
   background: white;
   padding: 3rem;
-  margin-left: -54px;
+  margin-left: -50px;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   position: relative;
@@ -493,45 +493,36 @@
 }
 
 @media (max-width: 768px) {
-  .contact-hero {
-    height: 40vh;
-    min-height: 300px;
-    background-attachment: scroll;
-  }
-
-  .contact-hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .contact-hero p {
-    font-size: 1rem;
-  }
-
   .contact-form-wrapper {
-    padding: 2rem;
+    margin: 0 auto;            /* centre le bloc */
+    max-width: 500px;          /* limite la largeur */
+    text-align: center;        /* centre le texte à l'intérieur */
+    padding: 2rem;             /* déjà présent mais tu peux ajuster */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .contact-form-wrapper h2 {
-    font-size: 2rem;
+  .contact-form {
+    width: 100%;               /* prend toute la largeur disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .form-group,
   .form-row {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    width: 100%;
   }
 
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .faq-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .map-placeholder {
-    height: 350px;
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    max-width: 400px;          /* évite que les champs soient trop larges */
   }
 }
+
 
 @media (max-width: 480px) {
   .contact-hero h1 {
@@ -543,7 +534,7 @@
   }
 
   .contact-form-wrapper {
-    padding: 1.5rem;
+    padding: 1.5rem;   /* Yesss */
   }
 
   .contact-form-wrapper h2 {

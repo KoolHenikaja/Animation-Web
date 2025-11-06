@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="../css-file/responsive.css" />
   <link rel="icon" href="../assets/images/logo.webp" type="image/png" />
 </head>
+
 <body>
   <!-- En-tête -->
   <header class="header">
@@ -17,7 +19,14 @@
         <img src="../assets/images/logo.webp" alt="Big Food logo" class="logo-image" loading="lazy" />
         <h1>Big Food</h1>
       </div>
-      <nav class="nav">
+
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav" id="nav-menu">
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="menu.html" class="active">Menu</a></li>
@@ -58,7 +67,8 @@
             </div>
             <div class="product-info">
               <h3>Burger Classique</h3>
-              <p>Steak haché 100% bœuf, salade croquante, tomate fraîche, oignon, cornichons et notre sauce maison secrète</p>
+              <p>Steak haché 100% bœuf, salade croquante, tomate fraîche, oignon, cornichons et notre sauce maison
+                secrète</p>
               <div class="product-details">
                 <span class="calories">🔥 450 kcal</span>
                 <span class="prep-time">⏱️ 10 min</span>
@@ -366,7 +376,7 @@
     <div class="container">
       <h2 class="section-title">Nos Formules Avantageuses</h2>
       <p class="section-subtitle">Économisez avec nos menus combinés</p>
-      
+
       <div class="formules-grid">
         <div class="formule-card">
           <div class="formule-badge">-15%</div>
@@ -437,4 +447,5 @@
   <!-- Scripts -->
   <script src="../javascript-file/menu.js"></script>
 </body>
+
 </html>

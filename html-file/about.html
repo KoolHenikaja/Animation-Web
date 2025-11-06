@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="../css-file/responsive.css" />
   <link rel="icon" href="../assets/images/logo.webp" type="image/png" />
 </head>
+
 <body>
   <!-- En-tête -->
   <header class="header">
@@ -17,7 +19,14 @@
         <img src="../assets/images/logo.webp" alt="Big Food logo" class="logo-image" />
         <h1>Big Food</h1>
       </div>
-      <nav class="nav">
+
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav" id="nav-menu">
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="menu.html">Menu</a></li>
@@ -43,9 +52,14 @@
         <div class="story-text">
           <h2>L'histoire de Big Food</h2>
           <p class="lead">Tout a commencé avec une passion simple : créer les meilleurs burgers de Madagascar.</p>
-          <p>En 2020, au cœur d'Antananarivo, nous avons ouvert les portes de Big Food avec une vision claire : offrir une expérience culinaire exceptionnelle en combinant des ingrédients frais, des recettes authentiques et un service rapide.</p>
-          <p>Aujourd'hui, Big Food est devenu une référence incontournable pour tous les amateurs de burgers. Notre succès repose sur notre engagement indéfectible envers la qualité, la fraîcheur et la satisfaction de nos clients.</p>
-          <p>Chaque burger est préparé avec amour, chaque frite est coupée à la main, et chaque client est traité comme un membre de notre famille.</p>
+          <p>En 2020, au cœur d'Antananarivo, nous avons ouvert les portes de Big Food avec une vision claire : offrir
+            une expérience culinaire exceptionnelle en combinant des ingrédients frais, des recettes authentiques et un
+            service rapide.</p>
+          <p>Aujourd'hui, Big Food est devenu une référence incontournable pour tous les amateurs de burgers. Notre
+            succès repose sur notre engagement indéfectible envers la qualité, la fraîcheur et la satisfaction de nos
+            clients.</p>
+          <p>Chaque burger est préparé avec amour, chaque frite est coupée à la main, et chaque client est traité comme
+            un membre de notre famille.</p>
         </div>
         <div class="story-image">
           <img src="../assets/membres/fonder.webp" alt="Restaurant Big Food" />
@@ -63,24 +77,27 @@
     <div class="container">
       <h2 class="section-title">Nos Valeurs</h2>
       <p class="section-subtitle">Ce qui nous définit et nous guide chaque jour</p>
-      
+
       <div class="values-grid">
         <div class="value-card">
           <div class="value-icon">🏆</div>
           <h3>Qualité Premium</h3>
-          <p>Nous sélectionnons rigoureusement nos ingrédients. Viandes 100% fraîches, légumes du jour, pain artisanal - aucun compromis sur la qualité.</p>
+          <p>Nous sélectionnons rigoureusement nos ingrédients. Viandes 100% fraîches, légumes du jour, pain artisanal -
+            aucun compromis sur la qualité.</p>
         </div>
 
         <div class="value-card">
           <div class="value-icon">⚡</div>
           <h3>Service Rapide</h3>
-          <p>Fast-food ne signifie pas compromis. Nous garantissons un service rapide sans sacrifier la qualité de nos préparations.</p>
+          <p>Fast-food ne signifie pas compromis. Nous garantissons un service rapide sans sacrifier la qualité de nos
+            préparations.</p>
         </div>
 
         <div class="value-card">
           <div class="value-icon">🌱</div>
           <h3>Fraîcheur Garantie</h3>
-          <p>Tous nos produits sont préparés quotidiennement. Pas de congélation, pas de conservateurs - juste de la fraîcheur pure.</p>
+          <p>Tous nos produits sont préparés quotidiennement. Pas de congélation, pas de conservateurs - juste de la
+            fraîcheur pure.</p>
         </div>
 
         <div class="value-card">
@@ -92,13 +109,15 @@
         <div class="value-card">
           <div class="value-icon">🤝</div>
           <h3>Service Client</h3>
-          <p>Votre satisfaction est notre priorité absolue. Une équipe souriante et à l'écoute, toujours prête à vous servir.</p>
+          <p>Votre satisfaction est notre priorité absolue. Une équipe souriante et à l'écoute, toujours prête à vous
+            servir.</p>
         </div>
 
         <div class="value-card">
           <div class="value-icon">🌍</div>
           <h3>Responsabilité</h3>
-          <p>Nous nous engageons pour un avenir durable : emballages écologiques, partenariats locaux, zéro gaspillage.</p>
+          <p>Nous nous engageons pour un avenir durable : emballages écologiques, partenariats locaux, zéro gaspillage.
+          </p>
         </div>
       </div>
     </div>
@@ -136,7 +155,7 @@
     <div class="container">
       <h2 class="section-title">Notre Équipe</h2>
       <p class="section-subtitle">Les talents qui font Big Food</p>
-      
+
       <div class="team-grid">
         <div class="team-card">
           <div class="team-image">
@@ -145,29 +164,32 @@
           <div class="team-info">
             <h3>Jean Rakoto</h3>
             <p class="team-role">Chef Exécutif</p>
-            <p class="team-description">Passionné de cuisine depuis 15 ans, Jean supervise toutes nos créations culinaires avec expertise.</p>
+            <p class="team-description">Passionné de cuisine depuis 15 ans, Jean supervise toutes nos créations
+              culinaires avec expertise.</p>
           </div>
         </div>
 
         <div class="team-card">
           <div class="team-image">
-            <img src="../assets/membres/image2.webp" alt="Manager"  />
+            <img src="../assets/membres/image2.webp" alt="Manager" />
           </div>
           <div class="team-info">
             <h3>Marie Rasoamana</h3>
             <p class="team-role">Manager Général</p>
-            <p class="team-description">Marie veille à ce que chaque client vive une expérience exceptionnelle à chaque visite.</p>
+            <p class="team-description">Marie veille à ce que chaque client vive une expérience exceptionnelle à chaque
+              visite.</p>
           </div>
         </div>
 
         <div class="team-card">
           <div class="team-image">
-            <img src="../assets/membres/image3.webp" alt="Chef Pâtissier"  />
+            <img src="../assets/membres/image3.webp" alt="Chef Pâtissier" />
           </div>
           <div class="team-info">
             <h3>Paul Franck</h3>
             <p class="team-role">Chef Pâtissier</p>
-            <p class="team-description">Paul crée nos desserts maison qui font la fierté de Big Food depuis le premier jour.</p>
+            <p class="team-description">Paul crée nos desserts maison qui font la fierté de Big Food depuis le premier
+              jour.</p>
           </div>
         </div>
 
@@ -178,7 +200,8 @@
           <div class="team-info">
             <h3>Dylan Mickael</h3>
             <p class="team-role">Responsable Qualité</p>
-            <p class="team-description">Dylan garantit que chaque ingrédient respecte nos standards de qualité les plus élevés.</p>
+            <p class="team-description">Dylan garantit que chaque ingrédient respecte nos standards de qualité les plus
+              élevés.</p>
           </div>
         </div>
       </div>
@@ -259,4 +282,5 @@
   <!-- Scripts -->
   <script src="../javascript-file/about.js"></script>
 </body>
+
 </html>

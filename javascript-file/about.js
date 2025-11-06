@@ -2,6 +2,14 @@
 // SCRIPT POUR LA PAGE À PROPOS
 // ===================================
 
+ const burger = document.getElementById('burger');
+  const navMenu = document.getElementById('nav-menu');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    navMenu.classList.toggle('open');
+  });
+
 // Effet de scroll sur le header
 window.addEventListener('scroll', function() {
   const header = document.querySelector('.header');

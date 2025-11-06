@@ -2,6 +2,14 @@
 // SCRIPT POUR LA PAGE CONTACT
 // ===================================
 
+ const burger = document.getElementById('burger');
+  const navMenu = document.getElementById('nav-menu');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    navMenu.classList.toggle('open');
+  });
+
 document.addEventListener('DOMContentLoaded', function() {
   // Gestion du header au scroll
   const header = document.querySelector('.header');

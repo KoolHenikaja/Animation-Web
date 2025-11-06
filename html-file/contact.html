@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="../css-file/responsive.css" />
   <link rel="icon" href="../assets/images/logo.webp" type="image/png" />
 </head>
+
 <body>
   <!-- En-tête -->
   <header class="header">
@@ -17,7 +19,14 @@
         <img src="../assets/images/logo.webp" alt="Big Food logo" class="logo-image" loading="lazy" />
         <h1>Big Food</h1>
       </div>
-      <nav class="nav">
+
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav" id="nav-menu">
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="menu.html">Menu</a></li>
@@ -43,8 +52,9 @@
         <!-- Formulaire de Contact -->
         <div class="contact-form-wrapper">
           <h2>Envoyez-nous un message</h2>
-          <p class="form-subtitle">Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais</p>
-          
+          <p class="form-subtitle">Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs
+            délais</p>
+
           <form class="contact-form" id="contactForm">
             <div class="form-row">
               <div class="form-group">
@@ -134,13 +144,14 @@
               <div class="info-content">
                 <h3>Horaires d'ouverture</h3>
                 <p><strong>Lun - Ven:</strong> 10h00 - 22h00<br />
-                   <strong>Sam - Dim:</strong> 11h00 - 23h00</p>
+                  <strong>Sam - Dim:</strong> 11h00 - 23h00
+                </p>
               </div>
             </div>
           </div>
 
           <!-- Réseaux Sociaux -->
-          
+
         </div>
       </div>
     </div>
@@ -151,7 +162,7 @@
     <div class="container">
       <h2 class="section-title">Trouvez-nous sur la carte</h2>
       <p class="section-subtitle">Venez nous rendre visite dans notre restaurant</p>
-      
+
       <div class="map-wrapper">
         <div class="map-placeholder">
           <div class="map-icon">📍</div>
@@ -211,4 +222,5 @@
   <!-- Script -->
   <script src="../javascript-file/contact.js"></script>
 </body>
+
 </html>

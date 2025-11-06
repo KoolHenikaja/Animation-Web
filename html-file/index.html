@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="../css-file/responsive.css" />
   <link rel="icon" href="../assets/images/logo.webp" type="image/png" />
 </head>
+
 <body>
   <!-- En-tête -->
   <header class="header">
@@ -16,7 +18,14 @@
         <img src="../assets/images/logo.webp" alt="Big Food logo" class="logo-image" loading="lazy" />
         <h1>Big Food</h1>
       </div>
-      <nav class="nav">
+
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav" id="nav-menu">
         <ul>
           <li><a href="index.html" class="active">Accueil</a></li>
           <li><a href="menu.html">Menu</a></li>
@@ -32,7 +41,9 @@
     <div class="hero-slider">
       <!-- Slide 1 -->
       <div class="hero-slide active">
-        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero_1.webp');" loading="lazy"></div>
+        <div class="hero-bg"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero_1.webp');"
+          loading="lazy"></div>
         <div class="hero-content">
           <h2 class="slide-in">Découvrez nos délicieux burgers faits maison !</h2>
           <p class="slide-in-delay">Fraîcheur, qualité et rapidité au rendez-vous.</p>
@@ -42,7 +53,9 @@
 
       <!-- Slide 2 -->
       <div class="hero-slide">
-        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/burger-classic.webp');" loading="lazy"></div>
+        <div class="hero-bg"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/burger-classic.webp');"
+          loading="lazy"></div>
         <div class="hero-content">
           <h2 class="slide-in">Le Classique Inégalé</h2>
           <p class="slide-in-delay">Notre burger signature qui fait fondre les cœurs</p>
@@ -52,7 +65,9 @@
 
       <!-- Slide 3 -->
       <div class="hero-slide">
-        <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/chicken-burger.webp');" loading="lazy"></div>
+        <div class="hero-bg"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/chicken-burger.webp');"
+          loading="lazy"></div>
         <div class="hero-content">
           <h2 class="slide-in">Poulet Croustillant Premium</h2>
           <p class="slide-in-delay">Saveurs épicées et textures croquantes</p>
@@ -346,6 +361,7 @@
   </footer>
 
   <!-- Scripts -->
- <script src="../javascript-file/main.js"></script>
+  <script src="../javascript-file/main.js"></script>
 </body>
+
 </html>
